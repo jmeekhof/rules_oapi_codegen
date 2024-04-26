@@ -1,0 +1,5 @@
+alias(
+    name = "oapi-codegen",
+    actual = "@com_github_deepmap_oapi_codegen_v2//cmd/oapi-codegen:oapi-codegen",
+    visibility = ["//visibility:public"],
+)
