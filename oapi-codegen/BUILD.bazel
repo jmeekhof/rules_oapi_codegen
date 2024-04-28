@@ -3,3 +3,11 @@ alias(
     actual = "@com_github_deepmap_oapi_codegen_v2//cmd/oapi-codegen:oapi-codegen",
     visibility = ["//visibility:public"],
 )
+
+filegroup(
+    name = "all_files",
+    srcs = [
+        "BUILD.bazel",
+    ],
+    visibility = ["//visibility:public"],
+)

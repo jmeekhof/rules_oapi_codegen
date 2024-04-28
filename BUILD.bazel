@@ -10,3 +10,15 @@ buildifier(
     name = "buildifier.fix",
     lint_mode = "fix",
 )
+
+filegroup(
+    name = "all_files",
+    srcs = [
+        "BUILD.bazel",
+        "MODULE.bazel",
+        "go.mod",
+        "go.sum",
+        "//oapi-codegen:all_files",
+    ],
+    visibility = ["//visibility:public"],
+)
